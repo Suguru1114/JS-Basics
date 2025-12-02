@@ -1,0 +1,39 @@
+import "./styles.css";
+
+// Step 1: Make an array
+// const fruits = ["apple", "banana"];
+
+const fruits = ["Apple", "Banana"];
+
+// Step 2: Add a new item
+// fruits.push("orange");
+// console.log("After push:", fruits);
+
+fruits.push("orange");
+console.log("after push", fruits);
+
+// Step 3: Remove the last item
+// const removed = fruits.pop();
+// console.log("Removed:", removed);
+// console.log("After pop:", fruits);
+
+const removed = fruits.pop();
+console.log("removed:", removed);
+console.log("after removed", fruits);
+
+// // Step 4: Wrap in a function
+// function addFruit(fruit) {
+//   fruits.push(fruit);
+//   return fruits; // return updated list
+// }
+
+// console.log(addFruit("grape")); // ["apple", "banana", "grape"]
+
+function addFruit(fruit) {
+  //return fruits.push(fruit);
+  fruits.push(fruit);
+  return fruits;
+}
+
+//good
+console.log(addFruit("lemon"));
