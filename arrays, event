@@ -1,0 +1,4 @@
+//make input bar empty
+  input.value = "";
+//out the cursor back into the input box
+  input.focus();
